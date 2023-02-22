@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">TableSync</string>
+    <string name="description">Четность недели считается особым методом. Если номер недели делится на два без остатка - это четная неделя, если нет - нечетная. Как правило,первая учебная неделя является нечетной, далее они чередуются.</string>
+    <string name="week">Четная или нечетеая?</string>
+    <string name="Date">Дата:</string>
+    <string name="whataweek">Какая сейчас неделя:</string>
+    <string name="telegram">Telegram: @artemy_mv</string>
 </resources>
