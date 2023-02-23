@@ -3,6 +3,8 @@ package com.example.tablesync
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.LinearLayout
 import android.widget.TextView
 import java.util.*
 
@@ -18,7 +20,11 @@ class MainActivity : AppCompatActivity() {
         val date = findViewById<TextView>(R.id.date)
         val altparity = findViewById<TextView>(R.id.altparity)
         val whennext = findViewById<TextView>(R.id.whennext)
-
+        val layout: LinearLayout = findViewById(R.id.linearLayout3)
+        when(daysofweek()) {
+            "Суббота" -> layout.visibility = View.VISIBLE
+            "Воскресенье" -> layout.visibility = View.VISIBLE
+        }
         parity.text = parity()
         dayofweek.text = daysofweek()
         date.text = date()
