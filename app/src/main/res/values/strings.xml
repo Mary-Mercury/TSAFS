@@ -6,6 +6,6 @@
     <string name="whataweek">Какая сейчас неделя:</string>
     <string name="telegram">Telegram: @artemy_mv</string>
     <string name="nextweek">Следующая неделя: </string>
-    <string name="whennext">Начинатся через </string>
+    <string name="whennext">Начинатся </string>
     <string name="sample">образец</string>
 </resources>
