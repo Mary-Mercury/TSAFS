@@ -40,6 +40,19 @@ import java.util.*
         return daysOfWeek
     }
 
+    fun altdaysofweek(): String {
+        val daysOfWeek: String = when (LocalDate.now().dayOfWeek) {
+            DayOfWeek.MONDAY -> "Вторник"
+            DayOfWeek.TUESDAY -> "Среда"
+            DayOfWeek.WEDNESDAY -> "Четверг"
+            DayOfWeek.THURSDAY -> "Пятница"
+            DayOfWeek.FRIDAY -> "Суббота"
+            DayOfWeek.SATURDAY -> "Воскресенье"
+            DayOfWeek.SUNDAY -> "Понедельник"
+        }
+        return daysOfWeek
+    }
+
     //функция для отображения следующей недели за 2-1 день до ее начала
     fun whennext(): String {
         val daysOfWeek = daysofweek()
