@@ -12,6 +12,9 @@
         android:theme="@style/Theme.TableSync"
         tools:targetApi="31">
         <activity
+            android:name=".NexttableActivity"
+            android:exported="false" />
+        <activity
             android:name=".TableActivity"
             android:exported="false" />
         <activity

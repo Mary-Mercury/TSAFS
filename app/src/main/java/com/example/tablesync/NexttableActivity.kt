@@ -1,13 +1,15 @@
 package com.example.tablesync
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 
-class TableActivity : AppCompatActivity() {
+class NexttableActivity : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.table)
+        setContentView(R.layout.nexttable)
         supportActionBar?.hide()
 
         val schedule1 = findViewById<TextView>(R.id.schedule1)
@@ -18,8 +20,9 @@ class TableActivity : AppCompatActivity() {
         val schedule6 = findViewById<TextView>(R.id.schedule6)
 
         val ParityOfWeek = parity()
-        val day = daysofweek()
+        val day = altdaysofweek()
         val sum = day + " " + ParityOfWeek
+
 
         when(sum) {
             "Понедельник Четная" -> {

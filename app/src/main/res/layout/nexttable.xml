@@ -23,7 +23,7 @@
             android:layout_width="360dp"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/schedule">
+            android:text="@string/next_schedule">
         </TextView>
     </LinearLayout>
 
@@ -75,13 +75,13 @@
         app:layout_constraintStart_toStartOf="@+id/linearLayout10"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout10"
         app:layout_constraintVertical_bias="0.0">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/time2"
-                    style="@style/description"
-                    android:gravity="center">
-                </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/time2"
+            style="@style/description"
+            android:gravity="center">
+        </TextView>
     </LinearLayout>
 
     <LinearLayout
@@ -114,13 +114,13 @@
         app:layout_constraintStart_toStartOf="@+id/linearLayout8"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
         app:layout_constraintVertical_bias="0.0">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    style="@style/description"
-                    android:text="@string/time3"
-                    android:gravity="center">
-                </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/description"
+            android:text="@string/time3"
+            android:gravity="center">
+        </TextView>
     </LinearLayout>
 
     <LinearLayout
@@ -153,13 +153,13 @@
         app:layout_constraintStart_toStartOf="@+id/linearLayout11"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout11"
         app:layout_constraintVertical_bias="0.0">
-                <TextView
-                    style="@style/description"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:text="@string/time4">
-                </TextView>
+
+        <TextView
+            style="@style/description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/time4"></TextView>
     </LinearLayout>
 
     <LinearLayout
@@ -193,13 +193,13 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout13"
         app:layout_constraintVertical_bias="0.0">
 
-                <TextView
-                    style="@style/description"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:text="@string/time5">
-                </TextView>
+        <TextView
+            style="@style/description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/time5">
+        </TextView>
     </LinearLayout>
 
     <LinearLayout
@@ -230,13 +230,13 @@
         app:layout_constraintStart_toStartOf="@+id/linearLayout15"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout15"
         app:layout_constraintVertical_bias="0.0">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:text="@string/time6"
-                    style="@style/description">
-                </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/time6"
+            style="@style/description">
+        </TextView>
     </LinearLayout>
 
     <LinearLayout
