@@ -10,7 +10,7 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="360dp"
-        android:layout_height="120dp"
+        android:layout_height="130dp"
         android:background="@drawable/shape"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -18,13 +18,38 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.029"
-        android:orientation="horizontal">
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/pre_main"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:text="@string/week"
+            android:paddingTop="15dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:text="@string/whataweek"
+            style="@style/main"
+            android:gravity="center">
+        </TextView>
+
+        <TextView
+            android:id="@+id/parity"
+            style="@style/info"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/sample">
+        </TextView>
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="360dp"
-        android:layout_height="120dp"
+        android:layout_height="130dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/shape"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -33,13 +58,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:layout_constraintVertical_bias="0.0"
-        android:orientation="horizontal">
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Date"
+            style="@style/main"
+            android:gravity="center">
+        </TextView>
+        <TextView
+            android:id="@+id/dayofweek"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sample"
+            style="@style/info"
+            android:gravity="center">
+        </TextView>
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sample"
+            style="@style/info"
+            android:gravity="center">
+        </TextView>
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="360dp"
-        android:layout_height="120dp"
+        android:layout_height="130dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/shape"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -48,7 +96,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
         app:layout_constraintVertical_bias="0.0"
-        android:orientation="horizontal">
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:text="@string/nextweek"
+            style="@style/main"
+            android:gravity="center">
+        </TextView>
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sample"
+            style="@style/info"
+            android:gravity="center">
+        </TextView>
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:text="@string/whennext"
+            style="@style/main"
+            android:gravity="center">
+        </TextView>
+
     </LinearLayout>
 
     <LinearLayout
@@ -68,16 +140,15 @@
 
         <TextView
             android:id="@+id/textView"
-            style="@style/main"
+            style="@style/description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/description"
-            android:paddingLeft="dp"/>
+            android:text="@string/description"/>
     </LinearLayout>
 
     <TextView
-        style="@style/main"
+        style="@style/description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -90,7 +161,8 @@
         app:layout_constraintHorizontal_bias="0.108"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
-        app:layout_constraintVertical_bias="0.0"></TextView>
+        app:layout_constraintVertical_bias="0.0">
+    </TextView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
