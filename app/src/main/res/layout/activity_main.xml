@@ -19,7 +19,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.029"
         android:orientation="vertical">
-
         <TextView
             style="@style/pre_main"
             android:layout_width="360dp"
@@ -27,7 +26,6 @@
             android:text="@string/week"
             android:paddingTop="15dp">
         </TextView>
-
         <TextView
             android:layout_width="360dp"
             android:layout_height="wrap_content"
@@ -35,7 +33,6 @@
             style="@style/main"
             android:gravity="center">
         </TextView>
-
         <TextView
             android:id="@+id/parity"
             style="@style/info"
@@ -59,7 +56,6 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:layout_constraintVertical_bias="0.0"
         android:orientation="vertical">
-
         <TextView
             android:layout_width="360dp"
             android:layout_height="wrap_content"
@@ -99,7 +95,6 @@
         app:layout_constraintVertical_bias="0.0"
         android:orientation="vertical"
         android:visibility="gone">
-
         <TextView
             android:layout_width="360dp"
             android:layout_height="wrap_content"
@@ -116,7 +111,6 @@
             style="@style/info"
             android:gravity="center">
         </TextView>
-
         <TextView
             android:id="@+id/whennext"
             android:layout_width="360dp"
@@ -142,7 +136,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
         app:layout_constraintVertical_bias="1.0">
-
         <TextView
             android:id="@+id/textView"
             style="@style/description"
