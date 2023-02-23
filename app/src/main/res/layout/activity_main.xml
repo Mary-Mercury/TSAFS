@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="360dp"
+        android:layout_width="350dp"
         android:layout_height="130dp"
         android:background="@drawable/shape"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,13 +42,13 @@
             android:layout_width="360dp"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/sample">
+            android:text="образец">
         </TextView>
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="360dp"
+        android:layout_width="350dp"
         android:layout_height="130dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/shape"
@@ -76,6 +76,7 @@
             android:gravity="center">
         </TextView>
         <TextView
+            android:id="@+id/date"
             android:layout_width="360dp"
             android:layout_height="wrap_content"
             android:text="@string/sample"
@@ -86,7 +87,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout3"
-        android:layout_width="360dp"
+        android:layout_width="350dp"
         android:layout_height="130dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/shape"
@@ -103,9 +104,11 @@
             android:layout_height="wrap_content"
             android:text="@string/nextweek"
             style="@style/main"
-            android:gravity="center">
+            android:gravity="center"
+            android:paddingTop="15dp">
         </TextView>
         <TextView
+            android:id="@+id/altparity"
             android:layout_width="360dp"
             android:layout_height="wrap_content"
             android:text="@string/sample"
@@ -114,9 +117,10 @@
         </TextView>
 
         <TextView
+            android:id="@+id/whennext"
             android:layout_width="360dp"
             android:layout_height="wrap_content"
-            android:text="@string/whennext"
+            android:text="@string/sample"
             style="@style/main"
             android:gravity="center">
         </TextView>
@@ -125,18 +129,18 @@
 
     <LinearLayout
         android:id="@+id/linearLayout4"
-        android:layout_width="360dp"
+        android:layout_width="350dp"
         android:layout_height="120dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="44dp"
         android:background="@drawable/shape"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-        app:layout_constraintVertical_bias="0.92">
+        app:layout_constraintVertical_bias="1.0">
 
         <TextView
             android:id="@+id/textView"
@@ -144,7 +148,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/description"/>
+            android:text="@string/description" />
     </LinearLayout>
 
     <TextView
@@ -158,11 +162,10 @@
         android:text="@string/telegram"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
-        app:layout_constraintVertical_bias="0.0">
-    </TextView>
+        app:layout_constraintVertical_bias="0.0"></TextView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
