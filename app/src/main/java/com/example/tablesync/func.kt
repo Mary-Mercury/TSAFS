@@ -8,14 +8,14 @@ import java.util.*
 
     //функция для определения четности текущей недели
     fun parity(): String {
-        val varible = Calendar.getInstance(TimeZone.getTimeZone("Russia/Moscow")).get(Calendar.WEEK_OF_YEAR)
+        val varible = Calendar.getInstance(TimeZone.getTimeZone("UTC+3")).get(Calendar.WEEK_OF_YEAR)
         val part = if (varible % 2 == 0) { "Четная" } else { "Нечетная" }
         return part
     }
 
     //функция для определения четности следующей недели
     fun altparity(): String {
-        val varible = Calendar.getInstance(TimeZone.getTimeZone("Russia/Moscow")).get(Calendar.WEEK_OF_YEAR)
+        val varible = Calendar.getInstance(TimeZone.getTimeZone("UTC+3")).get(Calendar.WEEK_OF_YEAR)
         val altpart = if (varible % 2 == 0) { "Нечетная" } else { "Четная" }
         return altpart
     }
@@ -40,7 +40,7 @@ import java.util.*
         return daysOfWeek
     }
 
-    fun altdaysofweek(): String {
+    fun nextdaysofweek(): String {
         val daysOfWeek: String = when (LocalDate.now().dayOfWeek) {
             DayOfWeek.MONDAY -> "Вторник"
             DayOfWeek.TUESDAY -> "Среда"

@@ -134,7 +134,6 @@ class TableActivity : AppCompatActivity() {
                 schedule5.text = OddSunday[4]
                 schedule6.text = OddSunday[5]
             }
-            else -> { "Nothing"}
         }
     }
 }

@@ -20,7 +20,7 @@ class NexttableActivity : AppCompatActivity() {
         val schedule6 = findViewById<TextView>(R.id.schedule6)
 
         val ParityOfWeek = parity()
-        val day = altdaysofweek()
+        val day = nextdaysofweek()
         val sum = day + " " + ParityOfWeek
 
 
@@ -137,7 +137,6 @@ class NexttableActivity : AppCompatActivity() {
                 schedule5.text = OddSunday[4]
                 schedule6.text = OddSunday[5]
             }
-            else -> { "Nothing"}
         }
     }
 }
