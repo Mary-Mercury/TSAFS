@@ -20,20 +20,12 @@ class NexttableActivity : AppCompatActivity() {
         val schedule6 = findViewById<TextView>(R.id.schedule6)
 
         val ParityOfWeek = parity()
-        val day = nextdaysofweek()
+        val day = daysofweek()
         val sum = day + " " + ParityOfWeek
 
 
         when(sum) {
             "Понедельник Четная" -> {
-                schedule1.text = EvenMonday[0]
-                schedule2.text = EvenMonday[1]
-                schedule3.text = EvenMonday[2]
-                schedule4.text = EvenMonday[3] + "\nБ-6"
-                schedule5.text = EvenMonday[4] + "\n4-312"
-                schedule6.text = EvenMonday[5]
-            }
-            "Вторник Четная" -> {
                 schedule1.text = EvenTuesday[0]
                 schedule2.text = EvenTuesday[1] + "\nУ-406"
                 schedule3.text = EvenTuesday[2] + "\nУ-401"
@@ -41,7 +33,7 @@ class NexttableActivity : AppCompatActivity() {
                 schedule5.text = EvenTuesday[4]
                 schedule6.text = EvenTuesday[5]
             }
-            "Среда Четная" -> {
+            "Вторник Четная" -> {
                 schedule1.text = EvenWednesday[0] + "\nБ-2"
                 schedule2.text = EvenWednesday[1] + "\n4-102"
                 schedule3.text = EvenWednesday[2] + "\n4-309"
@@ -49,7 +41,7 @@ class NexttableActivity : AppCompatActivity() {
                 schedule5.text = EvenWednesday[4]
                 schedule6.text = EvenWednesday[5]
             }
-            "Четверг Четная" -> {
+            "Среда Четная" -> {
                 schedule1.text = EvenThursday[0]
                 schedule2.text = EvenThursday[1]
                 schedule3.text = EvenThursday[2]
@@ -57,7 +49,7 @@ class NexttableActivity : AppCompatActivity() {
                 schedule5.text = EvenThursday[4] + "\nБ-4"
                 schedule6.text = EvenThursday[5] + "\nУ-416"
             }
-            "Пятница Четная" -> {
+            "Четверг Четная" -> {
                 schedule1.text = EvenFriday[0]
                 schedule2.text = EvenFriday[1] + "\nУ-416"
                 schedule3.text = EvenFriday[2] + "\nБ-5"
@@ -65,7 +57,7 @@ class NexttableActivity : AppCompatActivity() {
                 schedule5.text = EvenFriday[4]
                 schedule6.text = EvenFriday[5]
             }
-            "Суббота Четная" -> {
+            "Пятница Четная" -> {
                 schedule1.text = EvenSaturday[0] + "\nУ-406"
                 schedule2.text = EvenSaturday[1]
                 schedule3.text = EvenSaturday[2]
@@ -73,7 +65,7 @@ class NexttableActivity : AppCompatActivity() {
                 schedule5.text = EvenSaturday[4]
                 schedule6.text = EvenSaturday[5]
             }
-            "Воскресенье Четная" -> {
+            "Суббота Четная" -> {
                 schedule1.text = EvenSunday[0]
                 schedule2.text = EvenSunday[1]
                 schedule3.text = EvenSunday[2]
@@ -81,7 +73,7 @@ class NexttableActivity : AppCompatActivity() {
                 schedule5.text = EvenSunday[4]
                 schedule6.text = EvenSunday[5]
             }
-            "Понедельник Нечетная" -> {
+            "Воскресенье Четная" -> {
                 schedule1.text = OddMonday[0]
                 schedule2.text = OddMonday[1] + "\n4-102"
                 schedule3.text = OddMonday[2] + "\nУ-412"
@@ -89,7 +81,7 @@ class NexttableActivity : AppCompatActivity() {
                 schedule5.text = OddMonday[4] + "\n4-312"
                 schedule6.text = OddMonday[5]
             }
-            "Вторник Нечетная" -> {
+            "Понедельник Нечетная" -> {
                 schedule1.text = OddTuesday[0]
                 schedule2.text = OddTuesday[1] + "\nУ-406"
                 schedule3.text = OddTuesday[2] + "\n4-516"
@@ -97,7 +89,7 @@ class NexttableActivity : AppCompatActivity() {
                 schedule5.text = OddTuesday[4] + "\n4-522"
                 schedule6.text = OddTuesday[5]
             }
-            "Среда Нечетная" -> {
+            "Вторник Нечетная" -> {
                 schedule1.text = OddWednesday[0] + "\nБ-2"
                 schedule2.text = OddWednesday[1] + "\n4-102"
                 schedule3.text = OddWednesday[2] + "\n4-309"
@@ -105,7 +97,7 @@ class NexttableActivity : AppCompatActivity() {
                 schedule5.text = OddWednesday[4]
                 schedule6.text = OddWednesday[5]
             }
-            "Четверг Нечетная" -> {
+            "Среда Нечетная" -> {
                 schedule1.text = OddThursday[0]
                 schedule2.text = OddThursday[1]
                 schedule3.text = OddThursday[2]
@@ -113,7 +105,7 @@ class NexttableActivity : AppCompatActivity() {
                 schedule5.text = OddThursday[4] + "\nБ-4"
                 schedule6.text = OddThursday[5] + "\nУ-416"
             }
-            "Пятница Нечетная" -> {
+            "Четверг Нечетная" -> {
                 schedule1.text = OddFriday[0]
                 schedule2.text = OddFriday[1] + "\nУ-406"
                 schedule3.text = OddFriday[2] + "\nБ-5"
@@ -121,7 +113,7 @@ class NexttableActivity : AppCompatActivity() {
                 schedule5.text = OddFriday[4]
                 schedule6.text = OddFriday[5]
             }
-            "Суббота Нечетная" -> {
+            "Пятница Нечетная" -> {
                 schedule1.text = OddSaturday[0]
                 schedule2.text = OddSaturday[1]
                 schedule3.text = OddSaturday[2]
@@ -129,13 +121,21 @@ class NexttableActivity : AppCompatActivity() {
                 schedule5.text = OddSaturday[4]
                 schedule6.text = OddSaturday[5]
             }
-            "Воскресенье Нечетная" -> {
+            "Суббота Нечетная" -> {
                 schedule1.text = OddSunday[0]
                 schedule2.text = OddSunday[1]
                 schedule3.text = OddSunday[2]
                 schedule4.text = OddSunday[3]
                 schedule5.text = OddSunday[4]
                 schedule6.text = OddSunday[5]
+            }
+            "Воскресенье Нечетная" -> {
+                schedule1.text = EvenMonday[0]
+                schedule2.text = EvenMonday[1]
+                schedule3.text = EvenMonday[2]
+                schedule4.text = EvenMonday[3] + "\nБ-6"
+                schedule5.text = EvenMonday[4] + "\n4-312"
+                schedule6.text = EvenMonday[5]
             }
         }
     }

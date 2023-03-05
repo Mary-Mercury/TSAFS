@@ -1,3 +1,5 @@
+@file:Suppress("WHEN_ENUM_CAN_BE_NULL_IN_JAVA")
+
 package com.example.tablesync
 
 import java.time.DayOfWeek
@@ -40,18 +42,18 @@ import java.util.*
         return daysOfWeek
     }
 
-    fun nextdaysofweek(): String {
-        val daysOfWeek: String = when (LocalDate.now().dayOfWeek) {
-            DayOfWeek.MONDAY -> "Вторник"
-            DayOfWeek.TUESDAY -> "Среда"
-            DayOfWeek.WEDNESDAY -> "Четверг"
-            DayOfWeek.THURSDAY -> "Пятница"
-            DayOfWeek.FRIDAY -> "Суббота"
-            DayOfWeek.SATURDAY -> "Воскресенье"
-            DayOfWeek.SUNDAY -> "Понедельник"
-        }
-        return daysOfWeek
-    }
+//    fun nextdaysofweek(): String {
+//        val daysOfWeek: String = when (LocalDate.now().dayOfWeek + 1) {
+//            DayOfWeek.MONDAY -> "Понедельник"
+//            DayOfWeek.TUESDAY -> "Вторник"
+//            DayOfWeek.WEDNESDAY -> "Среда"
+//            DayOfWeek.THURSDAY -> "Четверг"
+//            DayOfWeek.FRIDAY -> "Пятница"
+//            DayOfWeek.SATURDAY -> "Суббота"
+//            DayOfWeek.SUNDAY -> "Воскресенье"
+//        }
+//        return daysOfWeek
+//    }
 
     //функция для отображения следующей недели за 2-1 день до ее начала
     fun whennext(): String {

@@ -4,43 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/gradient">
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="350dp"
         android:layout_height="130dp"
         android:background="@drawable/shape"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.029"
-        android:orientation="vertical">
+        app:layout_constraintVertical_bias="0.029">
+
         <TextView
             style="@style/pre_main"
             android:layout_width="360dp"
             android:layout_height="wrap_content"
-            android:text="@string/week"
-            android:paddingTop="15dp">
+            android:paddingTop="15dp"
+            android:text="@string/week">
         </TextView>
+
         <TextView
+            style="@style/main"
             android:layout_width="360dp"
             android:layout_height="wrap_content"
-            android:text="@string/whataweek"
-            style="@style/main"
-            android:gravity="center">
+            android:gravity="center"
+            android:text="@string/whataweek">
         </TextView>
+
         <TextView
             android:id="@+id/parity"
             style="@style/info"
             android:layout_width="360dp"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="образец">
-        </TextView>
+            android:text="образец"></TextView>
     </LinearLayout>
 
     <LinearLayout
@@ -49,36 +51,36 @@
         android:layout_height="130dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/shape"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.0"
-        android:orientation="vertical">
+        app:layout_constraintVertical_bias="0.0">
+
         <TextView
+            style="@style/main"
             android:layout_width="360dp"
             android:layout_height="wrap_content"
-            android:text="@string/Date"
-            style="@style/main"
-            android:gravity="center">
-        </TextView>
+            android:gravity="center"
+            android:text="@string/Date"></TextView>
+
         <TextView
             android:id="@+id/dayofweek"
+            style="@style/info"
             android:layout_width="360dp"
             android:layout_height="wrap_content"
-            android:text="@string/sample"
-            style="@style/info"
-            android:gravity="center">
-        </TextView>
+            android:gravity="center"
+            android:text="@string/sample"></TextView>
+
         <TextView
             android:id="@+id/date"
+            style="@style/info"
             android:layout_width="360dp"
             android:layout_height="wrap_content"
-            android:text="@string/sample"
-            style="@style/info"
-            android:gravity="center">
-        </TextView>
+            android:gravity="center"
+            android:text="@string/sample"></TextView>
     </LinearLayout>
 
     <LinearLayout
@@ -87,38 +89,38 @@
         android:layout_height="130dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/shape"
+        android:orientation="vertical"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="0.0"
-        android:orientation="vertical"
-        android:visibility="gone">
+        app:layout_constraintVertical_bias="0.0">
+
         <TextView
+            style="@style/main"
             android:layout_width="360dp"
             android:layout_height="wrap_content"
-            android:text="@string/nextweek"
-            style="@style/main"
             android:gravity="center"
-            android:paddingTop="15dp">
-        </TextView>
+            android:paddingTop="15dp"
+            android:text="@string/nextweek"></TextView>
+
         <TextView
             android:id="@+id/altparity"
+            style="@style/info"
             android:layout_width="360dp"
             android:layout_height="wrap_content"
-            android:text="@string/sample"
-            style="@style/info"
-            android:gravity="center">
-        </TextView>
+            android:gravity="center"
+            android:text="@string/sample"></TextView>
+
         <TextView
             android:id="@+id/whennext"
+            style="@style/main"
             android:layout_width="360dp"
             android:layout_height="wrap_content"
-            android:text="@string/sample"
-            style="@style/main"
-            android:gravity="center">
-        </TextView>
+            android:gravity="center"
+            android:text="@string/sample"></TextView>
 
     </LinearLayout>
 
@@ -160,8 +162,7 @@
         app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
-        app:layout_constraintVertical_bias="0.0">
-    </TextView>
+        app:layout_constraintVertical_bias="0.0"></TextView>
 
     <Button
         android:id="@+id/button"
